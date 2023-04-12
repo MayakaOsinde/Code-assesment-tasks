@@ -14,12 +14,23 @@
 // Signature will always contain 3 numbers; n will always be a non-negative number; if n == 0, then return an empty array (except in C return NULL) and be ready for anything else which is not clearly specified ;)
 
 // BDD
+// The signature is the first three numbers that make up the fourth number and continue the chain.
+// The integer n is the number of elements to be returned.
+// The first three numbers in the sognature are numbers to be added to contribute to the fourth number
+
 
 // Pseudocode
+// Acceept the signature as an array of 3 integers. Accept N as a non negative number.
+// Use an array reducer to compile the total sum of the cumulative and current integers from the array.
+// Use a for loop with length n to find the number of elements to be utilized.
+// Return an array of the numbers as a tribonacci.
 
 // Solution
 function tribonacci(signature,n){
+
     //your code here
 
 
-  }
+
+u
+  } 
