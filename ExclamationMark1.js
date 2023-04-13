@@ -16,12 +16,13 @@
 
 
 // Solution
-function remove (string) {
-  //coding and coding....
+function remove(sentence) {
+    const words = sentence.split(' ');
+    const filteredWords = words.filter(word => {
+      const count = (word.match(/!/g) || []).length;
+      return count !== 1;
+    });
+    console.log(filteredWords.join(' '));
+  }
   
-  string.filter
-  
-  
-  
-  return '';
-}
+ remove("My house!")
