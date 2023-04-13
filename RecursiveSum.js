@@ -7,14 +7,21 @@
 // 132189  -->  1 + 3 + 2 + 1 + 8 + 9 = 24  -->  2 + 4 = 6
 // 493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
 
-
 // BDD
 
 // Pseudocode
 
 // Solution
 
-function digitalRoot(n) {
-
-    
+function digitalRoot(num) {
+    if (num < 10) {
+      return num;
+    } else {
+      let sum = 0;
+      num.toString().split("").forEach(function(digit) {
+        sum += parseInt(digit);
+      });
+      return digitalRoot(sum);
+    }
   }
+  
